@@ -21,7 +21,7 @@ const Catagories = async ({ id }) => {
                 category.category_id === id ? 'text-red-600' : ''
               }`}
             >
-              <Link href={`/category/${category.category_id}`} className="block">
+              <Link href={`/newscatagory/${category.category_id}`} className="block">
                 {category.category_name}
               </Link>
             </li>
