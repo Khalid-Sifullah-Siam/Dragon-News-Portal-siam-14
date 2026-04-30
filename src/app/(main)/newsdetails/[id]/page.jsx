@@ -1,5 +1,5 @@
 import NewsDetails from "@/Components/NewsDetails";
-import SocialSiderbar from "@/Components/SocialSidebar";
+import SocialSidebar from "@/Components/SocialSidebar";
 
 export const generateMetadata = async ({ params }) => {
     const { id } = await params;
@@ -18,9 +18,11 @@ const NewsDetailsPage = async ({params}) => {
     const {id} = await params;
 
     return (
-        <div className='grid grid-cols-3 gap-6 my-20'>
+        <div className='grid lg:grid-cols-3 gap-6 my-20'>
             <NewsDetails id={id} />
-            <SocialSiderbar/>
+            <div className='hidden lg:block'>
+                <SocialSidebar />
+            </div>
         </div>
     );
 };

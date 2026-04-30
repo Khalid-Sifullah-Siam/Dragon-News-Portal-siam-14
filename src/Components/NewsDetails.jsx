@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import { FaArrowLeft } from 'react-icons/fa';
+import SocialSidebar from './SocialSidebar';
 
 
 const NewsDetails = async ({ id }) => {
@@ -11,8 +12,8 @@ const NewsDetails = async ({ id }) => {
     const dataArray = await dataObject.data;
     const data = dataArray[0];
     return (
-        <div className='col-span-2'>
-            <h2 className='font-semibold mb-5'>News Details</h2>
+        <div className='lg:col-span-2'>
+            <h2 className='font-semibold mb-5 text-center lg:text-left'>News Details</h2>
 
             <div className='border border-[#e7e7e7FF] rounded-md space-y-6 p-8'>
 
@@ -21,6 +22,9 @@ const NewsDetails = async ({ id }) => {
                 <p className='text-2xl font-bold'>{data.title}</p>
                 <p className='text-[#706f6fFF]'>{data.details}</p>
                 <Link href={`/newscatagory/${data.category_id}`} className="btn bg-[#d72050FF] text-white text-xl font-medium px-6 py-2"><FaArrowLeft />All news in this category</Link>
+            </div>
+            <div className='lg:hidden mt-10'>
+                <SocialSidebar />
             </div>
         </div>
     );
