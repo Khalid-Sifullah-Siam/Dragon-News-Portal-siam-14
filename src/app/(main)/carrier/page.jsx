@@ -1,3 +1,6 @@
+export const metadata = {
+  title: "Dragon News - Carrier"
+};
 const CareerPage = () => {
   return (
     <div className="min-h-[40vh] bg-gradient-to-br from-gray-100 via-white to-red-100 px-6 py-20 flex items-center justify-center">

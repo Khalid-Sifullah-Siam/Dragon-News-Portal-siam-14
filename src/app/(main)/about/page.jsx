@@ -1,3 +1,7 @@
+export const metadata = {
+  title: "Dragon News - About us"
+};
+
 const AboutPage = () => {
   return (
     <div className="min-h-[49vh] bg-gradient-to-br from-gray-100 via-white to-blue-100 flex items-center justify-center px-6 py-20">

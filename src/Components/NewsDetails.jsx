@@ -3,6 +3,8 @@ import Link from 'next/link';
 import React from 'react';
 import { FaArrowLeft } from 'react-icons/fa';
 
+
+
 const NewsDetails = async ({id}) => {
 
     const res = await fetch(`https://openapi.programming-hero.com/api/news/${id}`);
