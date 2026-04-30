@@ -8,18 +8,18 @@ const AboutPage = () => {
 
       <div className="max-w-4xl w-full bg-white/80 backdrop-blur-lg shadow-2xl rounded-3xl p-10 border border-white">
 
-        {/* Title */}
+
         <h1 className="text-5xl font-extrabold text-gray-800 text-center mb-6">
           About Our News Portal
         </h1>
 
-        {/* Intro */}
+
         <p className="text-gray-600 text-lg leading-relaxed text-center mb-8">
           Welcome to our news platform — your trusted source for the latest,
           fastest, and most accurate news updates from around the world.
         </p>
 
-        {/* Sections */}
+
         <div className="grid md:grid-cols-3 gap-6 mb-10">
 
           <div className="p-6 bg-white rounded-2xl shadow-md hover:shadow-xl transition">
@@ -45,7 +45,7 @@ const AboutPage = () => {
 
         </div>
 
-        {/* Mission */}
+
         <div className="text-center">
           <h2 className="text-3xl font-bold text-gray-800 mb-4">
             Our Mission

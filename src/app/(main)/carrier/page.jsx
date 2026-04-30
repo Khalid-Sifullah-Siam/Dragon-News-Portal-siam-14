@@ -7,7 +7,7 @@ const CareerPage = () => {
 
       <div className="max-w-5xl w-full bg-white/80 backdrop-blur-lg shadow-2xl rounded-3xl p-10 border border-white">
 
-        {/* Title */}
+
         <h1 className="text-5xl font-extrabold text-gray-800 text-center mb-4">
           Journalism Career Path
         </h1>
@@ -16,7 +16,7 @@ const CareerPage = () => {
           Follow this roadmap to build your career in news, media, and journalism.
         </p>
 
-        {/* Steps */}
+
         <div className="grid md:grid-cols-3 gap-6">
 
           <div className="p-6 bg-white rounded-2xl shadow-md hover:shadow-xl transition">
