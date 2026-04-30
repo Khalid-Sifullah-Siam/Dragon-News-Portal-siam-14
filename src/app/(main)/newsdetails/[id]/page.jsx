@@ -1,5 +1,5 @@
 import NewsDetails from "@/Components/NewsDetails";
-import SocialSiderbar from "@/Components/SocialSiderbar";
+import SocialSiderbar from "@/Components/SocialSidebar";
 
 export const generateMetadata = async ({ params }) => {
     const { id } = await params;

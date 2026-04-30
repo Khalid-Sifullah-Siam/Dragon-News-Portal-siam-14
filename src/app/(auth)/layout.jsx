@@ -1,9 +1,9 @@
 import Navbar from "@/Components/Navbar";
-import { monserat } from "../layout";
+import { montserat } from "../layout";
 
 const AuthLayout = ({ children }) => {
     return (
-        <div className={`container mx-auto ${monserat.className}`}>
+        <div className={`container mx-auto ${montserat.className}`}>
             <Navbar />
             {children}
         </div>

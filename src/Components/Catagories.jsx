@@ -7,7 +7,7 @@ const Catagories = async ({ id }) => {
   const catagories = data.data.news_category;
 
   return (
-    <div>
+    <div className="text-center lg:text-left">
       <h2 className="font-semibold text-xl text-[#403f3f] mb-5">
         All Categories
       </h2>

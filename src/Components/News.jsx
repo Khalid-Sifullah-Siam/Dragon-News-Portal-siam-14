@@ -3,14 +3,14 @@ import NewsCard from "./NewsCard";
 const News = async ({ id }) => {
     const res = await fetch(`https://openapi.programming-hero.com/api/news/category/${id}`);
     const dataObject = await res.json();
-    const datasArray = dataObject.data || [];
+    const datasArray = dataObject.data;
 
     return (
-        <div className="col-span-2">
+        <div className="col-span-2 text-center lg:text-left">
             <h2 className="text-xl font-semibold mb-6">News by category</h2>
 
             {datasArray.length === 0 ? 
-                <div role="alert" className="alert alert-soft alert-info">
+                <div role="alert" className="alert alert-soft alert-info mx-auto max-w-lg lg:max-w-none">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
