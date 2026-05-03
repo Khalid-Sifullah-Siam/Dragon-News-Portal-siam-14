@@ -1,8 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Dragon News Portal 🐲🗞️
 
+Dragon News Portal is a modern, high-performance news aggregation platform built with **Next.js**. It provides a seamless experience for users to explore the latest news across various categories with a clean, professional, and responsive interface.
+
+## 🚀 Features
+
+- **Next.js Framework:** Leverages the latest Next.js features for optimized performance and SEO.
+- **Responsive Design:** Mobile-first approach ensuring accessibility across all devices.
+- **Dynamic Content:** Real-time news delivery and categorized browsing.
+- **Optimized UI:** High-quality icons and typography for a professional reading experience.
+- **Performance Tracking:** Integrated telemetry and monitoring for reliable operations.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** Next.js (App Router), React, Tailwind CSS
+- **Icons:** React Icons
+- **Fonts:** Geist (Vercel's optimized font family)
+- **Telemetry:** OpenTelemetry (Semantic Conventions)
+- **File System:** @humanfs/core (Abstraction layer)
+
+## Live Link: 
+https://dragon-news-portal-siam-14.vercel.app
 ## Getting Started
 
-First, run the development server:
+Follow these instructions to get a copy of the project up and running on your local machine for development.
+
+### Prerequisites
+
+Ensure you have the following installed:
+- Node.js (Latest LTS version)
+- npm or yarn or pnpm
+
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Khalid-Sifullah-Siam/Dragon-News-Portal-siam-14
+   cd dragon-news-portal
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   # or
+   yarn install
+   # or
+   pnpm install
+   ```
+
+### Running Locally
 
 ```bash
 npm run dev
@@ -10,8 +57,6 @@ npm run dev
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
