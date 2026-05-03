@@ -3,7 +3,7 @@ import { montserat } from "../layout";
 
 const AuthLayout = ({ children }) => {
     return (
-        <div className={`container mx-auto ${montserat.className}`}>
+        <div className={`bg-slate-100 ${montserat.className}`}>
             <Navbar />
             {children}
         </div>

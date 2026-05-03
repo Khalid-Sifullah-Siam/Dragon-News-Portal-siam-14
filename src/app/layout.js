@@ -1,6 +1,8 @@
+import dns from 'node:dns';
+dns.setServers(['8.8.8.8', '8.8.4.4']);
 import { Montserrat, Poppins } from "next/font/google";
 import "./globals.css";
-import { MdDescription } from "react-icons/md";
+
 
 const poppins = Poppins({
   variable: "--font-poppins",

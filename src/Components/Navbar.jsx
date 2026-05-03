@@ -4,6 +4,7 @@ import NavLink from "./NavLink";
 import userAvater from '@/assets/user.png'
 import Link from "next/link";
 import { useState } from "react";
+import { authClient } from "@/lib/auth-client";
 
 const Navbar = () => {
     const navItems = [
@@ -12,14 +13,27 @@ const Navbar = () => {
         { href: '/carrier', children: 'Carrier' },
     ]
 
+    const { data: session, isPending } = authClient.useSession();
+
+    const user = session?.user;
+
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     };
 
+
+    const handleSignOut = async() => {
+        await authClient.signOut();
+        alert('SignOut Success')
+    }
+
+    console.log(user)
     return (
         <div className="flex justify-between items-center py-4 px-6 relative lg:justify-around">
+
+<div className="hidden lg:block"></div>
 
 
             <div className="lg:hidden">
@@ -50,10 +64,21 @@ const Navbar = () => {
 
             
             <div className="flex items-center gap-2">
+                { isPending ? <span className="loading loading-dots loading-xl "></span> :
+                    user ?
+                    <div className="flex justify-center items-center gap-4">
+                        <Image src={user?.image} alt="user" width={40} height={40} />
+                     <p className="font-semibold" >{user.name}</p> 
+                     <button onClick={handleSignOut} className="bg-neutral text-white font-semibold text-lg py-2 px-4 rounded-2xl">SignOut</button>
+                    </div>
+                     : 
+                <div className="flex gap-4">
                 <Image src={userAvater} alt='UserAvater' width={41} height={41} />
                 <Link href={'/login'} className="bg-neutral text-white font-semibold text-lg py-2 px-4 rounded-2xl">
                     Login
                 </Link>
+                </div>
+                }
             </div>
         </div>
     );
